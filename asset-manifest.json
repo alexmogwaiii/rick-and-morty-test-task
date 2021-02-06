@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/rick-and-morty-test-task/static/css/main.dadee9b9.chunk.css",
-    "main.js": "/rick-and-morty-test-task/static/js/main.5dd42f1b.chunk.js",
-    "main.js.map": "/rick-and-morty-test-task/static/js/main.5dd42f1b.chunk.js.map",
+    "main.css": "/rick-and-morty-test-task/static/css/main.79dd5903.chunk.css",
+    "main.js": "/rick-and-morty-test-task/static/js/main.d56ed37b.chunk.js",
+    "main.js.map": "/rick-and-morty-test-task/static/js/main.d56ed37b.chunk.js.map",
     "runtime-main.js": "/rick-and-morty-test-task/static/js/runtime-main.83ea8bb3.js",
     "runtime-main.js.map": "/rick-and-morty-test-task/static/js/runtime-main.83ea8bb3.js.map",
     "static/css/2.679831fc.chunk.css": "/rick-and-morty-test-task/static/css/2.679831fc.chunk.css",
-    "static/js/2.649e4011.chunk.js": "/rick-and-morty-test-task/static/js/2.649e4011.chunk.js",
-    "static/js/2.649e4011.chunk.js.map": "/rick-and-morty-test-task/static/js/2.649e4011.chunk.js.map",
+    "static/js/2.c73e4056.chunk.js": "/rick-and-morty-test-task/static/js/2.c73e4056.chunk.js",
+    "static/js/2.c73e4056.chunk.js.map": "/rick-and-morty-test-task/static/js/2.c73e4056.chunk.js.map",
     "index.html": "/rick-and-morty-test-task/index.html",
     "static/css/2.679831fc.chunk.css.map": "/rick-and-morty-test-task/static/css/2.679831fc.chunk.css.map",
-    "static/css/main.dadee9b9.chunk.css.map": "/rick-and-morty-test-task/static/css/main.dadee9b9.chunk.css.map",
-    "static/js/2.649e4011.chunk.js.LICENSE.txt": "/rick-and-morty-test-task/static/js/2.649e4011.chunk.js.LICENSE.txt"
+    "static/css/main.79dd5903.chunk.css.map": "/rick-and-morty-test-task/static/css/main.79dd5903.chunk.css.map",
+    "static/js/2.c73e4056.chunk.js.LICENSE.txt": "/rick-and-morty-test-task/static/js/2.c73e4056.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.83ea8bb3.js",
     "static/css/2.679831fc.chunk.css",
-    "static/js/2.649e4011.chunk.js",
-    "static/css/main.dadee9b9.chunk.css",
-    "static/js/main.5dd42f1b.chunk.js"
+    "static/js/2.c73e4056.chunk.js",
+    "static/css/main.79dd5903.chunk.css",
+    "static/js/main.d56ed37b.chunk.js"
   ]
 }
