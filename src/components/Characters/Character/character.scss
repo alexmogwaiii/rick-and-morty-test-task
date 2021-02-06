@@ -1,0 +1,47 @@
+.character {
+  position: relative;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 25px;
+  background-color: #e4a788;
+
+  cursor: pointer;
+
+  &__image {
+    width: 200px;
+
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  &__name {
+    margin-top: 15px;
+
+    font-size: 1.6rem;
+  }
+
+  &__species {
+    font-size: 1.4rem;
+  }
+
+  &__status {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &__info {
+    border: 2px solid rgb(255, 234, 47);
+    font-size: 1.5rem;
+    background-color: #a1ee35ab;
+    padding: 10px;
+  }
+
+  &__info-item {
+    color: #44281d;
+  }
+}
