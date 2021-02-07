@@ -10,14 +10,12 @@ const useStyles = makeStyles({
   select: {
     color: 'brown',
     width: '80px',
-    marginTop: '0 !important',
-    height: '50px',
+    height: '30px',
     cursor: 'pointer',
   },
   label: {
     color: 'brown',
     fontSize: '1.6rem',
-    left: '5px',
   },
   control: {
     backgroundColor: '#fae48bff',

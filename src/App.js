@@ -1,8 +1,10 @@
 import React from 'react';
-import { Switch, Route, HashRouter, Link } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 import { Header } from './components/Header';
-import { Characters } from './components/Characters/CharactersList';
+import { Characters } from './components/Characters/Characters';
+import { Episodes } from './components/Episodes/Episodes';
+import { Locations } from './components/Locations/Locations';
 
 import './App.scss';
 import './styles/main.scss';
@@ -10,18 +12,14 @@ import './styles/main.scss';
 function App() {
   return (
     <div className="App">
-      <main className="main">
-        <HashRouter basename="/">
-          <Header />
-
-          <Route path="/">
-            <h2 className="main__start">
-              Home
-            </h2>
-          </Route>
+      <HashRouter basename="/">
+        <Header />
+        <main className="main">
           <Route path="/characters" component={Characters} />
-        </HashRouter>
-      </main>
+          <Route path="/episodes" component={Episodes} />
+          <Route path="/locations" component={Locations} />
+        </main>
+      </HashRouter>
     </div>
   );
 }

@@ -7,12 +7,20 @@ import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
 
 import './character.scss';
 
 const useStyles = makeStyles(theme => ({
   margin: {
     margin: theme.spacing(1),
+  },
+  closeButton: {
+    position: 'absolute',
+    right: theme.spacing(1),
+    top: theme.spacing(1),
+    color: theme.palette.grey[500],
   },
 }));
 
@@ -22,7 +30,7 @@ const theme = createMuiTheme({
   },
 });
 
-export const Character = ({ character }) => {
+export const Character = React.memo(({ character }) => {
   const [isModalOpen, setModal] = useState(false);
 
   const handleClose = () => {
@@ -100,11 +108,21 @@ export const Character = ({ character }) => {
               {` ${character.status}`}
             </li>
           </ul>
+
+          {isModalOpen ? (
+            <IconButton
+              aria-label="close"
+              className={classes.closeButton}
+              onClick={handleClose}
+            >
+              <CloseIcon />
+            </IconButton>
+          ) : null}
         </div>
       </Dialog>
     </li>
   );
-};
+});
 
 Character.propTypes = {
   character: PropTypes.shape({
