@@ -1,18 +1,18 @@
 .character {
   position: relative;
-  width: 200px;
+  width: 240px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   border-radius: 25px;
-  background-color: #e4a788;
+  background-color: #bc8f8f;
 
   cursor: pointer;
 
   &__image {
-    width: 200px;
+    width: 240px;
 
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;

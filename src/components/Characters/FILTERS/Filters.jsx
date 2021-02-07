@@ -8,19 +8,25 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   select: {
-    color: 'brown',
-    width: '80px',
-    height: '30px',
-    cursor: 'pointer',
+    '& ul': {
+      color: 'brown',
+      width: '125px',
+      cursor: 'pointer',
+    },
+    '& li': {
+      fontSize: '1.5rem',
+      width: '125px',
+      overflow: 'visible',
+    },
   },
   label: {
     color: 'brown',
     fontSize: '1.6rem',
+    left: '-5px',
   },
   control: {
     backgroundColor: '#fae48bff',
-    boxShadow: '1px 1px 5px green',
-    margin: '10px',
+    width: '125px',
   },
 });
 
@@ -49,6 +55,7 @@ export const Filters = ({
     <div className="characters__filters">
       <FormControl
         className={classes.control}
+        variant="filled"
       >
         <InputLabel
           id="species"
@@ -61,7 +68,7 @@ export const Filters = ({
           value={species}
           id="species-select"
           onChange={handleSpecies}
-          className={classes.select}
+          MenuProps={{ classes: { paper: classes.select } }}
         >
           <MenuItem value="">All</MenuItem>
           <MenuItem value="animal">Animal</MenuItem>
@@ -77,6 +84,7 @@ export const Filters = ({
       </FormControl>
       <FormControl
         className={classes.control}
+        variant="filled"
       >
         <InputLabel
           id="status"
@@ -89,7 +97,7 @@ export const Filters = ({
           value={status}
           id="status-select"
           onChange={handleStatus}
-          className={classes.select}
+          MenuProps={{ classes: { paper: classes.select } }}
         >
           <MenuItem value="">All</MenuItem>
           <MenuItem value="dead">Dead</MenuItem>
@@ -99,6 +107,7 @@ export const Filters = ({
       </FormControl>
       <FormControl
         className={classes.control}
+        variant="filled"
       >
         <InputLabel
           id="gender"
@@ -111,7 +120,7 @@ export const Filters = ({
           value={gender}
           id="gender-select"
           onChange={handleGender}
-          className={classes.select}
+          MenuProps={{ classes: { paper: classes.select } }}
         >
           <MenuItem value="">All</MenuItem>
           <MenuItem value="female">Female</MenuItem>

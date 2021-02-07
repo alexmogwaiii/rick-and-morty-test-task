@@ -13,7 +13,6 @@ export const Characters = () => {
   const [status, setStatusFilter] = useState('');
   const [gender, setGenderFilter] = useState('');
   const [hasError, setError] = useState(false);
-
   const [page, setPage] = useState(1);
 
   const loadCharacters = async() => {
@@ -30,6 +29,7 @@ export const Characters = () => {
       setCharacters(charactersFromServer);
     } catch (error) {
       setError(true);
+      setPage(1);
     }
   };
 

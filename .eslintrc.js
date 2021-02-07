@@ -12,6 +12,8 @@ module.exports = {
     'no-console': 0,
     'no-unused-vars': 0,
     'eol-last': 0,
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
+    'no-restricted-syntax':
+      ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
   },
 };

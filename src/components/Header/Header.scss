@@ -34,7 +34,7 @@
     font-family: Roboto, sans-serif;
     text-decoration: none;
     border-radius: 3px;
-    background: #44281d;
+    background: #8fbc8f;
     box-shadow: 0 -3px #f0e14a inset;
     transition: 0.3s;
 
@@ -43,8 +43,8 @@
     &--active,
     &:active {
       outline: none;
-      background: #f0e14a;
-      color: #44281d;
+      background: #e7da4b;
+      color: #1a5f1d;
     }
 
     &:hover {

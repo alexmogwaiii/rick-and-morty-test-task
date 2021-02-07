@@ -1,0 +1,75 @@
+.watch-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 40px;
+
+  &__title {
+    margin: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: black;
+    text-shadow: 1px 1px 15px yellow, 0 0 1em red;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    color: rgb(252, 252, 252);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 10px 0 -45px;
+  }
+
+  &__input {
+    width: 200px;
+    height: 30px;
+    border: 2px solid transparent;
+    font-size: 1.5rem;
+
+    &--error {
+      border-color: red;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__empty-field {
+    position: absolute;
+    bottom: -10px;
+    left: 135px;
+
+    padding: 0 10px;
+
+    font-size: 1.3rem;
+    color: red;
+
+    background-color: black;
+  }
+
+  &__todos {
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.83);
+    padding: 10px;
+    width: 330px;
+  }
+
+  &__todo {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}

@@ -6,11 +6,22 @@ import Pagination from '@material-ui/lab/Pagination';
 
 const useStyles = makeStyles({
   root: {
-    color: '#97ce4c',
-    fontSize: '1.5rem',
-    fontWeight: 'bold',
-    boxShadow: '1px 1px 4px 97ce4c',
-    border: '2px solid #97ce4c',
+    '& .Mui-selected': {
+      backgroundColor: 'yellow',
+    },
+    '& .Mui-selected:hover': {
+      backgroundColor: 'green',
+    },
+    '& button': {
+      color: '#fff',
+      fontSize: '1.5rem',
+      fontWeight: 'bold',
+      backgroundColor: '#97ce4c',
+    },
+    '& button:hover': {
+      backgroundColor: '#f0e14a',
+      color: 'red',
+    },
   },
 });
 
@@ -26,6 +37,7 @@ export const PaginationUi = ({
       count={countOfPages}
       size="large"
       page={page}
+      className={classes.root}
       variant="outlined"
       shape="rounded"
       color="secondary"

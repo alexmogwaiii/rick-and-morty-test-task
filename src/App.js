@@ -5,9 +5,9 @@ import { Header } from './components/Header';
 import { Characters } from './components/Characters/Characters';
 import { Episodes } from './components/Episodes/Episodes';
 import { Locations } from './components/Locations/Locations';
+import { WatchList } from './components/WatchList/WatchList';
 
 import './App.scss';
-import './styles/main.scss';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/characters" component={Characters} />
           <Route path="/episodes" component={Episodes} />
           <Route path="/locations" component={Locations} />
+          <Route path="/watch-list" component={WatchList} />
         </main>
       </HashRouter>
     </div>
