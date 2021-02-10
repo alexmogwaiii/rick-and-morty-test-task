@@ -21,7 +21,8 @@ const useStyles = makeStyles({
   label: {
     '& .MuiFormControlLabel-label': {
       fontSize: '1.4rem',
-      marginLeft: '20px',
+      marginLeft: '50px',
+      fontWeight: 'bolde',
     },
   },
 });

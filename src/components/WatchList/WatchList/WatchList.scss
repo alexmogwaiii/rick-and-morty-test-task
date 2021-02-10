@@ -24,14 +24,6 @@
     padding: 15px;
   }
 
-  &__label {
-    font-size: 1.8rem;
-    color: rgb(252, 252, 252);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0 10px 0 -45px;
-  }
-
   &__input {
     width: 200px;
     height: 30px;
@@ -50,7 +42,7 @@
   &__empty-field {
     position: absolute;
     bottom: -10px;
-    left: 135px;
+    left: 45px;
 
     padding: 0 10px;
 
@@ -60,11 +52,16 @@
     background-color: black;
   }
 
+  &__no-data {
+    position: absolute;
+    left: 30px;
+  }
+
   &__todos {
     margin-top: 40px;
-    background-color: rgba(0, 0, 0, 0.83);
-    padding: 10px;
-    width: 330px;
+    background-color: #b7e4f9ff;
+    width: 530px;
+    color: black;
   }
 
   &__todo {

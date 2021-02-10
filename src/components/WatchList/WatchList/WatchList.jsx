@@ -72,15 +72,7 @@ export const WatchList = () => {
         className="watch-list__form"
         onSubmit={handleSubmit}
       >
-        <label
-          htmlFor="title-name"
-          className="watch-list__label"
-        >
-          Episode name
-        </label>
-
         <input
-          id="title-name"
           value={query}
           placeholder="Enter episode name here"
           name="watch-list-input"
@@ -107,8 +99,8 @@ export const WatchList = () => {
           )}
       </form>
 
-      {watchList.length
-        ? (
+      {watchList.length > 0
+        && (
           <ul className="watch-list__todos">
             {watchList.map(todo => (
               <WatchListItem
@@ -118,10 +110,6 @@ export const WatchList = () => {
               />
             ))}
           </ul>
-        ) : (
-          <div className="watch-list__no-data">
-            No data yet
-          </div>
         )}
     </article>
   );
