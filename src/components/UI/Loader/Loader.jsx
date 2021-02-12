@@ -6,6 +6,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     width: '100vw',
     marginTop: '10px',
+    position: 'absolute',
+    top: '-12px',
   },
 }));
 
